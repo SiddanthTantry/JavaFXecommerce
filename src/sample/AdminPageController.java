@@ -67,10 +67,8 @@ public class AdminPageController implements Initializable {
         try {
             Connection con = ConnectionConfig.getConnection();
             data = FXCollections.observableArrayList();
-            // Execute query and store result in a resultset
             ResultSet rs = con.createStatement().executeQuery("CALL ptable");
             while (rs.next()) {
-                //get string from db,whichever way
                 data.add(new AdminDetails(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)));
             }
         }
@@ -119,7 +117,5 @@ public class AdminPageController implements Initializable {
 
         }
         showTable();
-
-
-    }
+   }
 }
