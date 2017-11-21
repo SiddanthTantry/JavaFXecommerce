@@ -50,10 +50,8 @@ public class OrderPageController implements Initializable{
             int cid=FPcontroller.getInt();
             data = FXCollections.observableArrayList();
             String q="SELECT * FROM ORDERS WHERE CID='"+cid+"'";
-            // Execute query and store result in a resultset
             ResultSet rs = con.createStatement().executeQuery(q);
             while (rs.next()) {
-                //get string from db,whichever way
                 data.add(new OrderDetails(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
             }
         }
@@ -69,10 +67,6 @@ public class OrderPageController implements Initializable{
         Ccid.setCellValueFactory(new PropertyValueFactory<>("cid"));
         OrderTable.setItems(null);
         OrderTable.setItems(data);
-
-
-
-
     }
 
     public void onClickBckBtn(ActionEvent event) throws IOException {
