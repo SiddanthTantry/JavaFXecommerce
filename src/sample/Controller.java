@@ -25,9 +25,6 @@ public class Controller implements Initializable {
         return name;
     }
 
-
-
-
     @FXML
     private JFXTextField UsrText;
     @FXML
@@ -35,12 +32,8 @@ public class Controller implements Initializable {
     @FXML
     private StackPane stackPane;
 
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-
     }
 
     @FXML
@@ -92,15 +85,6 @@ public class Controller implements Initializable {
             });
             content.setActions(button);
             dialog.show();
-
-
-        }
-
-
-
-
-    }
-
-    public void onClickButton(ActionEvent event) {
+       }
     }
 }
