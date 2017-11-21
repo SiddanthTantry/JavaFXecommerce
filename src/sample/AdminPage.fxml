@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminPageController">
+   <children>
+      <ImageView fitHeight="569.0" fitWidth="1009.0">
+         <image>
+            <Image url="@../169666.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="485.0" layoutX="54.0" layoutY="47.0" opacity="0.85" stroke="TRANSPARENT" strokeType="INSIDE" width="312.0" />
+      <TableView fx:id="ptable" layoutX="387.0" layoutY="51.0" opacity="0.9" prefHeight="476.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="idc" prefWidth="75.0" text="PID" />
+            <TableColumn fx:id="namec" prefWidth="163.33331298828125" text="NAME" />
+            <TableColumn fx:id="mrpc" prefWidth="115.66668701171875" text="MRP" />
+            <TableColumn fx:id="catc" prefWidth="117.0" text="CATAGORY" />
+            <TableColumn fx:id="stockc" prefWidth="95.0" text="STOCK" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="pid" focusColor="BLACK" labelFloat="true" layoutX="133.0" layoutY="98.0" promptText="PID" />
+      <JFXTextField fx:id="name" labelFloat="true" layoutX="131.0" layoutY="146.0" promptText="NAME" />
+      <JFXTextField fx:id="mrp" labelFloat="true" layoutX="132.0" layoutY="192.0" promptText="MRP" />
+      <JFXTextField fx:id="cat" labelFloat="true" layoutX="131.0" layoutY="235.0" promptText="CATAGORY" />
+      <JFXTextField fx:id="stock" labelFloat="true" layoutX="131.0" layoutY="276.0" promptText="STOCK" />
+      <JFXButton fx:id="InsertBtn" buttonType="RAISED" layoutX="87.0" layoutY="347.0" onAction="#onClickInsertBtn" ripplerFill="#3b12db" text="INSERT">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deletebtn" buttonType="RAISED" layoutX="245.0" layoutY="346.0" onAction="#onClickDeleteBtn" text="DELETE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="UpdateBtn" buttonType="RAISED" layoutX="159.0" layoutY="414.0" onAction="#onClickUpadateBtn" ripplerFill="#02299e" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

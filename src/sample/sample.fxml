@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="569.0" prefWidth="1009.0" />
+      <ImageView fitHeight="569.0" fitWidth="1011.0">
+         <image>
+            <Image url="@../blue-material-design-ultra-hd-wallpapers.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#033b6f" height="459.0" layoutX="565.0" layoutY="62.0" opacity="0.75" stroke="#00000004" strokeType="INSIDE" width="382.0" />
+      <Text layoutX="675.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+         <font>
+            <Font name="Ubuntu" size="51.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="UsrText" blendMode="COLOR_BURN" focusColor="#8e9fd3" labelFloat="true" layoutX="630.0" layoutY="207.0" promptText="Username">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="PasswdTxt" blendMode="COLOR_BURN" labelFloat="true" layoutX="622.0" layoutY="280.0" promptText="Password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="Lgnbtn" blendMode="COLOR_BURN" buttonType="RAISED" layoutX="701.0" layoutY="357.0" onAction="#loadSecond1" text="Sign In" textFill="#2c2929">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <StackPane fx:id="stackPane" layoutX="428.0" layoutY="220.0" prefHeight="133.0" prefWidth="150.0" />
+      <ImageView fitHeight="237.0" fitWidth="253.0" layoutX="162.0" layoutY="149.0">
+         <image>
+            <Image url="@../backbone.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
