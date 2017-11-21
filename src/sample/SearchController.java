@@ -130,16 +130,10 @@ public class SearchController implements Initializable {
             });
             content.setActions(button);
             dialog.show();
-
-
-
         }
         catch(Exception e){
             System.out.println("Exception "+e);
         }
-
-
-
     }
 
     public void onClickBckBtn(ActionEvent event) throws IOException {
