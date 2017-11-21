@@ -11,8 +11,6 @@ public class OrderDetails {
     private final StringProperty pid;
     private final StringProperty cid;
 
-
-    //Default constructor
     public OrderDetails(String id, String orderdate, String deliverydate,String cost,String pid, String cid) {
         this.id = new SimpleStringProperty(id);
         this.orderdate = new SimpleStringProperty(orderdate);
@@ -22,7 +20,7 @@ public class OrderDetails {
         this.cid = new SimpleStringProperty(cid);
     }
 
-    //Getters
+  
     public String getId() {
         return id.get();
     }
@@ -45,7 +43,7 @@ public class OrderDetails {
         return cid.get();
     }
 
-    //Setters
+   
     public void setId(String value) {
         id.set(value);
     }
@@ -67,7 +65,7 @@ public class OrderDetails {
         cid.set(value);
     }
 
-    //Property values
+   
     public StringProperty idProperty() {
         return id;
     }
