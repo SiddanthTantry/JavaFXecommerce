@@ -65,10 +65,4 @@ public class AdminDetails {
     public StringProperty stockProperty() {
         return stock;
     }
-
-
-
-
-
-
 }
